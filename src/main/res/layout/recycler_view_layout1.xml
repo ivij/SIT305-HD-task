@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+
+    android:id="@+id/note_layout1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the title"
+                android:layout_toRightOf="@+id/image1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_margin="6dp"
+                android:textSize="18sp"
+                android:id="@+id/title1">
+            </TextView>
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title1"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toRightOf="@+id/image1"
+                android:text="This is the description"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the date"
+                android:layout_toRightOf="@+id/image1"
+                android:textColor="@color/black"
+                android:layout_below="@+id/count"
+                android:layout_margin="6dp"
+                android:textSize="18sp"
+                android:id="@+id/date1">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the time"
+                android:layout_toRightOf="@+id/image1"
+                android:textColor="@color/black"
+                android:layout_below="@+id/date1"
+                android:layout_margin="6dp"
+                android:textSize="18sp"
+                android:id="@+id/time1">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the quantity"
+                android:layout_toRightOf="@+id/image1"
+                android:textColor="@color/black"
+                android:layout_below="@+id/time1"
+                android:layout_margin="6dp"
+                android:textSize="18sp"
+                android:id="@+id/quantity1">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the location"
+                android:layout_toRightOf="@+id/image1"
+                android:textColor="@color/black"
+                android:layout_below="@+id/quantity1"
+                android:layout_margin="6dp"
+                android:textSize="18sp"
+                android:id="@+id/location1">
+            </TextView>
+
+            <ImageButton
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:id="@+id/shareButton1"
+                app:srcCompat="@drawable/ic_baseline_share_24" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

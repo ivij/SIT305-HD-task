@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:id="@+id/layout_main">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="387dp"
+        android:layout_below="@id/menuButton"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="260dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="11dp"
+        android:layout_toRightOf="@id/menuButton"
+        android:text="Discover free food"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="107dp"
+        android:layout_height="92dp"
+        android:layout_below="@id/recyclerView"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="25dp"
+
+        android:layout_toRightOf="@id/textView2"
+        android:backgroundTint="@color/white"
+        android:onClick="addNewNote"
+        android:src="@drawable/adds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+    android:id="@+id/menuButton"
+        android:layout_width="45dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+
+    android:onClick="showMenu"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+
+
+</RelativeLayout>
+

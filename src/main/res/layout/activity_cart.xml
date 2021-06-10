@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cartActivity">
+
+    <ImageButton
+        android:id="@+id/menuButton11"
+        android:layout_width="45dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+
+        android:onClick="showMenu11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleCart"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_below="@+id/menuButton11" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycleCart"
+        android:textSize="40dp"
+        android:text="Total:" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycleCart"
+        android:layout_toRightOf="@id/textView5"
+        android:layout_marginLeft="5dp"
+        android:textSize="40dp"
+        android:text="4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycleCart"
+        android:layout_toRightOf="@id/total"
+        android:layout_marginLeft="100dp"
+        android:textSize="40dp"
+        android:text="$" />
+
+    <Button
+        android:id="@+id/payBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="Pay With PayPal"
+        android:layout_marginLeft="75dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateNotesActivity">
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_add_circle_24" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_below="@+id/image2"
+        android:hint="Title"
+        android:id="@+id/title2"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="Description"
+        android:id="@+id/description2"
+        android:layout_below="@id/title2"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="Time"
+        android:id="@+id/time2"
+        android:layout_below="@id/date2"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:id="@+id/quantity2"
+        android:layout_below="@id/time2"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location2"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Add to cart"
+        android:textSize="18sp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="Location"
+        android:id="@+id/date2"
+        android:layout_below="@id/description2"
+        android:textColor="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/location2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/map"
+        android:layout_below="@id/quantity2"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/paypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:text="Pay with PayPal"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
